@@ -1,0 +1,181 @@
+/* Base Styles */
+
+.cardContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  width: 100%;
+  max-width: 500px; /* Make it responsive */
+  padding: 10px;
+}
+
+.card {
+  padding: 40px;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+  width: 100%; /* Make it responsive */
+  margin-top: 20px;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  white-space: nowrap; /* Prevents text from wrapping */
+  text-overflow: ellipsis; /* Adds ellipsis (...) for overflowed text */
+}
+
+.cardTitle {
+  font-size: 1.0em;
+  font-weight: bold;
+  white-space: nowrap; /* Prevents text from wrapping */
+  overflow: hidden; /* Hides overflowed text */
+  text-overflow: ellipsis; /* Adds ellipsis (...) for overflowed text */
+}
+
+.timestamp {
+  font-size: 0.8em;
+  color: #888;
+}
+
+.content {
+  margin: 15px 0;
+}
+
+.previewImage {
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
+  margin-bottom: 10px;
+}
+
+.container {
+  padding: 20px;
+  background-color: white;
+  border-radius: 8px;
+  width: 100%;
+  max-width: 600px;
+  margin: auto;
+  margin-top: 50px;
+}
+
+.profileContainer {
+  display: flex;
+  align-items: center;
+  gap: 10px; /* Space between image and name */
+}
+
+.profileImage {
+  width: 50px; /* Adjust size as needed */
+  height: 50px;
+  border-radius: 50%; /* Makes the image circular */
+  border: 2px solid #000; /* Optional border */
+  object-fit: cover; /* Ensures image scales well within the circle */
+}
+
+.filters-dropdown-container {
+  position: relative;
+  display: inline-block;
+}
+
+.filters-button {
+  background-color: #e0e0e0; /* Adjust color as needed */
+  border: none;
+  padding: 8px 12px;
+  border-radius: 4px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+}
+
+.filters-button img {
+  margin-right: 8px;
+}
+
+.dropdown {
+  background-color: #fff;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  left: 100%; /* Position the dropdown to the right of the button */
+  margin-left: 10px; /* Optional: Adds some space between button and dropdown */
+  top: 0;
+  padding: 8px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+  z-index: 1000; /* Ensures the dropdown is above other content */
+}
+
+.dropdown-item {
+  padding: 8px 12px;
+  cursor: pointer;
+}
+
+.dropdown-item:hover {
+  background-color: #f0f0f0;
+}
+.filterSelect {
+  width: 100%;
+  padding: 5px;
+  margin-top: 5px;
+}
+.filtersButton {
+  background-color: #e0e0e0;
+  border: none;
+  padding: 8px 12px;
+  border-radius: 4px;
+  cursor: pointer;
+
+}
+/* Responsive Styles */
+
+@media (max-width: 768px) {
+  .cardContainer {
+    padding: 5px;
+  }
+
+  .card {
+    padding: 20px;
+  }
+
+  .container {
+    margin-top: 30px;
+  }
+
+  .profileImage {
+    width: 40px; /* Smaller profile image */
+    height: 40px;
+  }
+
+  .filters-button {
+    padding: 6px 10px;
+  }
+
+  .dropdown {
+    margin-left: 5px;
+  }
+}
+
+@media (max-width: 480px) {
+  .cardContainer {
+    width: 100%;
+  }
+
+  .card {
+    padding: 15px;
+  }
+
+  .profileImage {
+    width: 30px; /* Even smaller profile image */
+    height: 30px;
+  }
+
+  .filters-button {
+    padding: 4px 8px;
+  }
+
+  .dropdown {
+    width: 100%; /* Make dropdown full width on small screens */
+    margin-left: 0;
+    top: 100%; /* Position below the button */
+  }
+}

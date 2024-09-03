@@ -1,0 +1,285 @@
+.profilePage {
+  width: 100%;
+
+  margin: 0 auto;
+  padding: 20px;
+  box-sizing: border-box;
+  border-radius: 10px;
+}
+
+.header {
+  position: relative;
+  width: 100%;
+ 
+}
+
+.backgroundImage {
+  width: 100%;
+  height: 30vw;
+  min-height: 400px;
+  max-height: 700px;
+ 
+  border-radius: 10px;
+  background-size: cover; /* or 'contain' depending on your preference */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed; /* Optional, for parallax effect */
+}
+
+.profileInfo {
+  display: flex;
+  align-items: center;
+  position: absolute;
+  bottom: -50px;
+  left: 20px;
+  background-color: transparent;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+.profileImages {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  margin-right: 20px;
+  object-fit: cover;
+}
+
+.name {
+  font-size: clamp(18px, 4vw, 24px);
+  font-weight: bold;
+  margin: 0;
+  color: white;
+}
+
+.title {
+  font-size: clamp(14px, 3vw, 16px);
+  color: #666;
+  margin-top: 5px;
+}
+
+.contactInfo {
+  margin-top: 60px;
+ 
+  color: #999;
+  margin-left: 20px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 2px 10px 0 rgba(0, 0, 0, 0.19);
+  width: 350px;
+  height: 200px;
+  padding: 30px;
+  border-radius: 10px;
+}
+.contentImage {
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
+  margin-bottom: 10px;
+}
+
+
+.mainContent {
+  margin-top: 30px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.cardContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  width: 100%;
+  max-width: 600px;
+}
+
+.card {
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+  background-color: #fff;
+  width: 100%;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.fullname {
+  font-weight: bold;
+  margin: 0;
+  font-size: clamp(12px, 2vw, 14px);
+}
+
+.timestamp {
+  font-size: clamp(10px, 1.8vw, 12px);
+  color: #888;
+}
+
+.content {
+  margin: 15px 0;
+  font-size: clamp(14px, 2.5vw, 16px);
+}
+
+.actionButtons {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  margin-top: 10px;
+}
+
+.actionButton {
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-size: clamp(12px, 2.2vw, 14px);
+  color: #555;
+  margin: 5px 0;
+}
+
+.commentInputContainer {
+  position: relative;
+  display: flex;
+  align-items: center;
+  margin-top: 10px;
+}
+
+.commentInput {
+  flex: 1;
+  padding: 8px 40px 8px 15px;
+  border: 1px solid #ccc;
+  border-radius: 20px;
+  outline: none;
+  font-size: clamp(12px, 2.2vw, 14px);
+}
+
+.sendButton {
+  position: absolute;
+  right: 10px;
+  background-color: #1877f2;
+  border: none;
+  color: white;
+  padding: 5px 10px;
+  border-radius: 15px;
+  cursor: pointer;
+  font-size: clamp(10px, 2vw, 12px);
+}
+
+.commentContainer {
+  background-color: #f0f2f5;
+  padding: 10px 15px;
+  border-radius: 10px;
+  width: 100%;
+  max-width: 300px;
+  font-family: Arial, sans-serif;
+  margin-top: 30px;
+}
+
+.commentText {
+  margin: 5px 0 0 0;
+  font-size: clamp(12px, 2.2vw, 14px);
+  color: #333;
+}
+
+.previewImage {
+  max-width: 100%;
+  max-height: 200px;
+  border-radius: 10px;
+  border: 2px solid #ddd;
+  object-fit: cover;
+}
+
+.profileContainer {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.profileImage {
+  width: clamp(30px, 8vw, 50px);
+  height: clamp(30px, 8vw, 50px);
+  border-radius: 50%;
+  border: 2px solid #000;
+  object-fit: cover;
+}
+
+.commentFooter {
+  display: flex;
+  align-items: center;
+}
+
+.reply {
+  margin-left: 15px;
+  cursor: pointer;
+  font-size: clamp(10px, 2vw, 12px);
+}
+
+.replyInputContainer {
+  margin-top: 10px;
+  display: flex;
+  align-items: center;
+  margin-bottom: 5px;
+}
+
+.replyInput {
+  flex-grow: 1;
+  padding: 8px;
+  border-radius: 4px;
+  border: 1px solid #ccc;
+  width: 100%;
+  font-size: clamp(12px, 2.2vw, 14px);
+}
+
+.sendButtons {
+  color: blue;
+  border: none;
+  padding: 8px 12px;
+  background-color: transparent;
+  border-radius: 4px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  font-size: clamp(12px, 2.2vw, 14px);
+}
+
+.container {
+  padding: 20px;
+  background-color: white;
+  border-radius: 8px;
+  width: 100%;
+  max-width: 600px;
+  margin: auto;
+  box-sizing: border-box;
+}
+.filtersButton {
+  background-color: #e0e0e0;
+  border: none;
+  padding: 8px 12px;
+  border-radius: 4px;
+  cursor: pointer;
+
+}
+.dropdown {
+  background-color: #fff;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  padding: 8px;
+
+}
+.filterSelect {
+  width: 100%;
+  padding: 5px;
+  margin-top: 5px;
+}
+
+@media (max-width: 768px) {
+  .mainContent {
+    flex-direction: column;
+  }
+
+  .cardContainer {
+    max-width: 100%;
+  }
+}

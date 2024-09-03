@@ -1,0 +1,61 @@
+.container {
+  padding: 20px;
+  background-color: white;
+  border-radius: 8px;
+  width: 100%;
+  max-width: 600px;
+  margin: auto;
+  margin-top: 200px;
+  display: flex;
+  flex-direction: column; /* Stack cards vertically on small screens */
+  justify-content: space-around;
+  align-items: center;
+  gap: 20px;
+}
+
+/* Adjust layout for larger screens */
+@media (min-width: 768px) {
+  .container {
+    flex-direction: row; /* Align cards horizontally on larger screens */
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+/* Adjust margin for smaller screens */
+@media (max-width: 767px) {
+  .container {
+    margin-top: 100px;
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+
+  .card {
+    width: 100%; /* Make cards full-width on smaller screens */
+  }
+}
+
+.card {
+  width: 300px;
+  padding: 20px;
+  background-color: #f9f9f9;
+  border-radius: 10px;
+  text-align: center;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+}
+
+.icon {
+  margin-bottom: 15px;
+}
+
+.title {
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.description {
+  font-size: 14px;
+  color: #555;
+}
